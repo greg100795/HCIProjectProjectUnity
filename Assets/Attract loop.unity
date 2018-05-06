@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 13321003}
   - component: {fileID: 13321002}
   - component: {fileID: 13321001}
+  - component: {fileID: 13321004}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -175,6 +176,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &13321004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13321000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+  delegates: []
 --- !u!1 &20425241
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &138808971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1653,7 +1667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &666971085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1758,7 +1772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &844530148
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1863,7 +1877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &864589687
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2367,7 +2381,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1158192384}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 056cc854e37646048b683b5c8840f863, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 62604f9caa58ba341b3119572b3a165d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1145526292}
@@ -2828,6 +2842,7 @@ GameObject:
   - component: {fileID: 1379501281}
   - component: {fileID: 1379501280}
   - component: {fileID: 1379501279}
+  - component: {fileID: 1379501283}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2916,6 +2931,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1379501283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379501278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355a9cf4bf7fb094d9eba3b08e119b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidTimer: 0
+  MainMenuPanel: {fileID: 0}
+  EventsPanel: {fileID: 0}
+  DropinPanel: {fileID: 0}
+  MapPanel: {fileID: 0}
+  AttractLoopPanel: {fileID: 0}
+  Background: {fileID: 0}
 --- !u!1 &1405795917
 GameObject:
   m_ObjectHideFlags: 0
