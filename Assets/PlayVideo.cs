@@ -18,6 +18,7 @@ public class PlayVideo : MonoBehaviour {
     void Start () {
         //initalizing timer value
         vidTimer = 30.0f;
+        /** In case we need to create references at runtime
         //retrieve objects
         MainMenuPanel = GameObject.Find("MainMenuPanel");
         DropinPanel = GameObject.Find("DropinPanel");
@@ -25,20 +26,22 @@ public class PlayVideo : MonoBehaviour {
         EventsPanel = GameObject.Find("EventsPanel");
         AttractLoopPanel = GameObject.Find("AttractLoopPanel");
         Background = GameObject.Find("Background");
-
+        //Set default state
         AttractLoopPanel.SetActive(true);
         MainMenuPanel.SetActive(false);
         DropinPanel.SetActive(false);
         MapPanel.SetActive(false);
         EventsPanel.SetActive(false);
         Background.SetActive(false);
-
+        **/
     }
 	
 	// Update is called once per frame
 	void Update () {
         vidTimer -= Time.deltaTime;
         if (Input.anyKey)
+            vidTimer = 30.0f;
+        if (AttractLoopPanel.activeInHierarchy)
             vidTimer = 30.0f;
         if (vidTimer < 0)
         {
@@ -48,7 +51,6 @@ public class PlayVideo : MonoBehaviour {
             MapPanel.SetActive(false);
             EventsPanel.SetActive(false);
             Background.SetActive(false);
-            vidTimer = 25.0f;
 
         }
     }

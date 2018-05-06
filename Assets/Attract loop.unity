@@ -427,7 +427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &138808971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1667,7 +1667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &666971085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1772,7 +1772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &844530148
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1877,7 +1877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &864589687
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2943,12 +2943,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidTimer: 0
-  MainMenuPanel: {fileID: 0}
-  EventsPanel: {fileID: 0}
-  DropinPanel: {fileID: 0}
-  MapPanel: {fileID: 0}
-  AttractLoopPanel: {fileID: 0}
-  Background: {fileID: 0}
+  MainMenuPanel: {fileID: 1377216260}
+  EventsPanel: {fileID: 844530147}
+  DropinPanel: {fileID: 666971084}
+  MapPanel: {fileID: 864589686}
+  AttractLoopPanel: {fileID: 138808970}
+  Background: {fileID: 1569339079}
 --- !u!1 &1405795917
 GameObject:
   m_ObjectHideFlags: 0
