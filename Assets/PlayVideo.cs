@@ -18,7 +18,7 @@ public class PlayVideo : MonoBehaviour {
     void Start () {
         //initalizing timer value
         vidTimer = 30.0f;
-        /** In case we need to create references at runtime
+        /** Extra code in case we need to create references at runtime
         //retrieve objects
         MainMenuPanel = GameObject.Find("MainMenuPanel");
         DropinPanel = GameObject.Find("DropinPanel");
@@ -39,10 +39,13 @@ public class PlayVideo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         vidTimer -= Time.deltaTime;
+        //check for access 
         if (Input.anyKey)
             vidTimer = 30.0f;
+        //check if loop already active 
         if (AttractLoopPanel.activeInHierarchy)
             vidTimer = 30.0f;
+        //If timer hits 0, start attract loop
         if (vidTimer < 0)
         {
             AttractLoopPanel.SetActive(true);
@@ -51,7 +54,12 @@ public class PlayVideo : MonoBehaviour {
             MapPanel.SetActive(false);
             EventsPanel.SetActive(false);
             Background.SetActive(false);
-
         }
+    }
+    
+    //Function to reset timer, used in server
+    public void resetTimer()
+    {
+        vidTimer = 30.0f;
     }
 }
