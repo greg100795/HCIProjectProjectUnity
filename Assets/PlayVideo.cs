@@ -13,6 +13,8 @@ public class PlayVideo : MonoBehaviour {
     public GameObject MapPanel;
     public GameObject AttractLoopPanel;
     public GameObject Background;
+    public GameObject locationPanel;
+    public GameObject JPPanel;
 
     // Use this for initialization
     void Start () {
@@ -54,6 +56,8 @@ public class PlayVideo : MonoBehaviour {
             MapPanel.SetActive(false);
             EventsPanel.SetActive(false);
             Background.SetActive(false);
+            locationPanel.SetActive(false);
+            JPPanel.SetActive(false);
         }
     }
     
